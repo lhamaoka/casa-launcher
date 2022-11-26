@@ -1,7 +1,7 @@
 apiVersion: v1
 clusters:
 - cluster:
-    certificate-authority: /home/daita/.minikube/ca.crt
+    certificate-authority: ca.crt
     server: https://192.168.49.2:8443
   name: miperfil
 - cluster:
@@ -32,9 +32,9 @@ preferences: {}
 users:
 - name: miperfil
   user:
-    client-certificate: /home/daita/.minikube/profiles/miperfil/client.crt
-    client-key: /home/daita/.minikube/profiles/miperfil/client.key
+    client-certificate: client.crt
+    client-key: client.key
 - name: miperfil3
   user:
-    client-certificate: /home/daita/.minikube/profiles/miperfil3/client.crt
-    client-key: /home/daita/.minikube/profiles/miperfil3/client.key
+    client-certificate: client.crt
+    client-key: client.key
